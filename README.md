@@ -3,7 +3,8 @@
 # My name is IntegralPilot and I love to code! 💻
 **Favourite Languages: 💕**
 
-<img src="https://github.com/IntegralPilot/IntegralPilot/assets/109999292/475e9938-c90a-4e8e-902d-c12110375684" width="100" height="100" alt="Rust"> <img src="https://github.com/IntegralPilot/IntegralPilot/assets/109999292/abdf8cca-94ca-4fa8-88e8-d1a5999ef5e8" width="100" height="100" alt="TypeScript">
+<img src="https://github.com/IntegralPilot/IntegralPilot/assets/109999292/475e9938-c90a-4e8e-902d-c12110375684" width="100" height="100" alt="Rust"> <img src="https://github.com/IntegralPilot/IntegralPilot/assets/109999292/abdf8cca-94ca-4fa8-88e8-d1a5999ef5e8" width="100" height="100" alt="TypeScript"> <img src="https://github.com/IntegralPilot/IntegralPilot/assets/109999292/234d61c9-a9ad-4d50-8b7b-2e103c1e3609" width="100" height="100" alt="Kotlin">
+
 
 
 **Current Projects: ⌚**
