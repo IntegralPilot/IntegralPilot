@@ -8,6 +8,8 @@
 
 
 **Current Projects: ⌚**
+- *breadcrumbs-rs* 🌳 - A beautiful, tiny traceback and logging library supporting `#![no_std]` rust.
+[![breadcrumbs-rs Repo](https://github-readme-stats.vercel.app/api/pin/?username=IntegralPilot&repo=breadcrumbs-rs)](https://github.com/IntegralPilot/breadcrumbs-rs)
 - *DuckPowered* 🦆 - A snap for Linux that automatically adjusts power settings based on CPU usage.
 [![DuckPowered Repo](https://github-readme-stats.vercel.app/api/pin/?username=IntegralPilot&repo=DuckPowered-Snap)](https://github.com/IntegralPilot/DuckPowered-Snap)
 - *MelodyRex* 🎵 - A next-generation music practice app jam-packed with social features and innovative tools. Click the image below to be taken to the MelodyRex Public Demo!
