@@ -29,10 +29,9 @@ Here are a few projects I'm especially proud of - spanning operating systems, co
 
 ---
 
-<details>
-  <summary>🌍 <strong>Open Source Contributions</strong>
+### 🌍 Open Source Contributions
 
-I actively contribute to open source, including the Wikimedia Foundation’s MediaWiki platform - my code is live on Wikipedia. **Click to expand.**</summary>
+I actively contribute to open source, including the Wikimedia Foundation’s MediaWiki platform - my code is live on Wikipedia.
 
 | Project            | Contribution Summary                                                                                       | Links                                                                                                   |
 | ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -40,22 +39,17 @@ I actively contribute to open source, including the Wikimedia Foundation’s Med
 | **MediaWiki – Nuke** *(merged & deployed)* | 🔓 Allowed non-admins to list pages in `Special:Nuke`, improving usability for patrollers. <br>🛑 Permission-aware UI and i18n. | [Change 1116493](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Nuke/+/1116493) <br>[T376378](https://phabricator.wikimedia.org/T376378) |
 | **MediaWiki – AbuseFilter** *(under review)* | 🕵️ Added support for *suppressing* filters containing PII. <br>👥 UI/API access restricted to oversighters. | [Change 1115319](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/AbuseFilter/+/1115319) <br>[T290324](https://phabricator.wikimedia.org/T290324) |
 
-</details>
-
 ---
 
-<details>
-  <summary>📱 <strong>Apps</strong>
+### 📱 Apps
 
-Outside of systems work, I build applications that solve real-world problems - especially in education, accessibility, and healthcare. **Click to expand.** </summary>
+Outside of systems work, I build applications that solve real-world problems - especially in education, accessibility, and healthcare.
 
 | App Name          | Description                                                                                                                                                   | Tech Stack                                      | Links                                                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | 🎵 **MelodyRex**  | Music practice companion for students/teachers, built in 8th grade. Still in use at my school.                                                                | `TypeScript`, `Vite`, `Firebase`, `Swift`       | [Website](https://melodyrex.pages.dev/get), [App Store](https://apps.apple.com/au/app/melodyrex-music-practice-tool/id6468330380)         |
 | 🧬 **ClarityScreen** | Concept app for clear and accessible display of Alzheimer’s genetic test results.                                                                        | `Flutter`, `Dart`, `Firebase`                   | [Website](https://clarityscreen.pages.dev)                                                                                                 |
 | 👁️ **4Sight**     | AI-powered assistant for low vision. Describes surroundings, reads signs/maps, and answers camera-based queries using LLMs and custom CNNs.                  | `Flutter`, `Dart`, `Azure`, `Google Gemini`     | [Website](https://4sight.pages.dev), [App Store](https://apps.apple.com/us/app/4sight-ai-for-real-life/id6505015586)                      |
-
-</details>
 
 ---
 
@@ -71,7 +65,7 @@ I contribute to security through responsible disclosure.
 
 ---
 
-### 💻 <strong>Languages & Tools</strong>
+### 💻 Languages & Tools
 
 Here are some of the technologies I use regularly:
 
