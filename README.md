@@ -1,17 +1,27 @@
-# 👋 Hey there! I'm IntegralPilot
+# 👋 Hey there! I'm Michael (aka IntegralPilot)
 
-I'm passionate about **low-level systems**, **security research**, and **compiler design** - and enjoy working across the full stack: from designing CPUs in VHDL, to writing OSes in Rust, to uncovering vulnerabilities in real-world software.
+I'm passionate about **low-level systems**, **security research**, and **compiler design**.
 
-🎯 **TL;DR** - I build **operating systems**, **compilers**, **CPUs**, and **neuroscience tools** from scratch - in Rust, VHDL, C++, and Python. I've contributed to **MediaWiki** (**PHP**-based, powers Wikipedia) multiple times, and found **security vulnerabilities** in macOS (currently under embargo), and built production apps with **Flutter** and **Vite/TypeScript**. Passionate about safety, speed, and systems.
+🎯 **TL;DR** - I build operating systems, compilers, and CPUs from scratch. I've discovered **high-severity security vulnerabilities** in Apple macOS ([**CVE-2025-43361**](https://www.cve.org/CVERecord?id=CVE-2025-43361)), wrote a **compiler** to bring Rust to the JVM, contributed code that powers **Wikipedia's backend**, and shipped production apps with **Flutter and TypeScript**.
 
+---
+
+### 🛡️ Security Research & Disclosures
+
+I contribute to security through responsible disclosure.
+
+| CVE ID      | Product      | Summary                                | Status                                                 |
+| ----------- | ------------ | -------------------------------------- | ------------------------------------------------------ |
+| **CVE-2025-43361** | Apple macOS, iOS, tvOS, visionOS, watchOS  | A malicious sandboxed app may be able to read kernel memory through an issue in the Audio subsystem. [Vendor advisory](https://support.apple.com/en-us/125108), [CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43361)| Assigned **CVSS 7.8 (HIGH)**, patched and published.  |
+
+> *Several other vulnerabilities are currently in the process of coordinated disclosure. They will be listed here once publicly announced.*
 ---
 
 ### 👨‍💻 About Me
 
-- 🇦🇺 Based in Australia  
+- 🇦🇺 High school student based in Australia  
 - 🧠 Deep interest in systems programming, hardware design, and applied security  
 - 🧬 Exploring computational neuroscience and bioinformatics  
-- 🏫 High school student aiming to pursue Pharmacology in university 
 - ⚡ I love building things that are fast, safe, and deeply understood
 
 ---
@@ -22,17 +32,16 @@ Here are a few projects I'm especially proud of - spanning operating systems, co
 
 | Project                                                                            | Description                                                                                                                                     | Key Technologies                            |
 | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| 🦀 **[WasmOS](https://github.com/IntegralPilot/wasm_os)**                           | Experimental x86_64 OS in Rust, designed from scratch to run WebAssembly-based userspace apps.                                                  | `Rust`, `WASM`, `x86_64`                    |
-| ☕ **[rustc_codegen_jvm](https://github.com/IntegralPilot/rustc_codegen_jvm)**     | Custom Rust compiler backend targeting JVM bytecode - run Rust code on the JVM.                                                                 | `Rust`, `Compilers`, `JVM`                  |
-| ⚡ **[GammaCPU](https://github.com/IntegralPilot/GammaCPU)**                       | A 32-bit, stack-based CPU in VHDL executing a subset of the WASM instruction set. (Built with @aellul27.)                                      | `VHDL`, `WASM`, `Hardware`                  |
-| 🧠 **[DynamicSNN](https://github.com/IntegralPilot/DynamicSNN)**                   | C++ simulator for biologically plausible learning in Spiking Neural Networks, modeling synergy in plasticity mechanisms.                       | `C++`, `Neuroscience`, `Python`             |
+| ☕ **[rustc_codegen_jvm](https://github.com/IntegralPilot/rustc_codegen_jvm)**     | Custom Rust compiler backend targeting JVM bytecode. Compile Rust to a `.jar` to run on any JVM.<br>- **Supports**: Control flow, ADTs, generics, closures, traits, dynamic dispatch, etc.<br>- **Tooling**: Includes a custom Python-based build/test system and seamless Java interop.                                                                  | `Rust`, `Compilers`, `JVM`  |
+| 🦀 **[WasmOS](https://github.com/IntegralPilot/wasm_os)**                           | Experimental x86_64 unikernel OS in Rust, designed from scratch to run WebAssembly-based userspace apps.<br>- **Supports**: Rust, C, C++ and AssemblyScript userspace programs compiled to WASM.<br>- **Features:** Custom libc/libstd++ and ABI design, and VFS/inode system.                                                | `Rust`, `WASM`, `x86_64`                    |
+| ⚡ **[GammaCPU](https://github.com/IntegralPilot/GammaCPU)**                       | A 32-bit, stack-based CPU in VHDL executing a subset of the WASM instruction set, including a custom stack and ALU component, and integration and unit testing system. (Built with @aellul27.)                                      | `VHDL`, `WASM`, `Hardware`                  |
+| 🧠 **[DynamicSNN](https://github.com/IntegralPilot/DynamicSNN)**                   | C++ simulator for biologically plausible learning in Spiking Neural Networks, modeling synergy in plasticity mechanisms. Features modern C++17 design principles including smart pointers and CMake, and easy to use Python wrapper API.                      | `C++`, `Neuroscience`, `Python`             |
 
 ---
 
-<details>
-  <summary>🌍 <strong>Open Source Contributions</strong>
+🌍 <strong>Open Source Contributions</strong>
 
-I actively contribute to open source, including the Wikimedia Foundation’s MediaWiki platform - my code is live on Wikipedia. **Click to expand.**</summary>
+I actively contribute to open source, including the Wikimedia Foundation’s MediaWiki platform - my code is live on Wikipedia.
 
 | Project            | Contribution Summary                                                                                       | Links                                                                                                   |
 | ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -40,49 +49,43 @@ I actively contribute to open source, including the Wikimedia Foundation’s Med
 | **MediaWiki – Nuke** *(merged & deployed)* | 🔓 Allowed non-admins to list pages in `Special:Nuke`, improving usability for patrollers. <br>🛑 Permission-aware UI and i18n. | [Change 1116493](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Nuke/+/1116493) <br>[T376378](https://phabricator.wikimedia.org/T376378) |
 | **MediaWiki – AbuseFilter** *(under review)* | 🕵️ Added support for *suppressing* filters containing PII. <br>👥 UI/API access restricted to oversighters. | [Change 1115319](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/AbuseFilter/+/1115319) <br>[T290324](https://phabricator.wikimedia.org/T290324) |
 
-</details>
-
 ---
+📱 <strong>Apps</strong>
 
-<details>
-  <summary>📱 <strong>Apps</strong>
-
-Outside of systems work, I build applications that solve real-world problems - especially in education, accessibility, and healthcare. **Click to expand.** </summary>
+Outside of systems work, I build applications that solve real-world problems - especially in education, accessibility, and healthcare.
 
 | App Name          | Description                                                                                                                                                   | Tech Stack                                      | Links                                                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| 🎵 **MelodyRex**  | Music practice companion for students/teachers, built in 8th grade. Still in use at my school.                                                                | `TypeScript`, `Vite`, `Firebase`, `Swift`       | [Website](https://melodyrex.pages.dev/get), [App Store](https://apps.apple.com/au/app/melodyrex-music-practice-tool/id6468330380)         |
-| 🧬 **ClarityScreen** | Concept app for clear and accessible display of Alzheimer’s genetic test results.                                                                        | `Flutter`, `Dart`, `Firebase`                   | [Website](https://clarityscreen.pages.dev)                                                                                                 |
-| 👁️ **4Sight**     | AI-powered assistant for low vision. Describes surroundings, reads signs/maps, and answers camera-based queries using LLMs and custom CNNs.                  | `Flutter`, `Dart`, `Azure`, `Google Gemini`     | [Website](https://4sight.pages.dev), [App Store](https://apps.apple.com/us/app/4sight-ai-for-real-life/id6505015586)                      |
-
-</details>
+| 🎵 **MelodyRex**  | Built a music practice companion for students/teachers, built in 8th grade. Still in use at my school.                                                                | `TypeScript`, `Vite`, `Firebase`, `Swift`       | [Website](https://melodyrex.pages.dev/get), [App Store](https://apps.apple.com/au/app/melodyrex-music-practice-tool/id6468330380)         |
+| 🧬 **ClarityScreen** | Designed a concept app with working backend for clear and accessible display of Alzheimer’s genetic test results.                                                                        | `Flutter`, `Dart`, `Firebase`                   | [Website](https://clarityscreen.pages.dev)                                                                                                 |
+| 👁️ **4Sight**     | Created an AI-powered assistant for low vision. Describes surroundings, reads signs/maps, and answers camera-based queries using LLMs and custom CNNs.                  | `Flutter`, `Dart`, `Azure`, `Google Gemini`     | [Website](https://4sight.pages.dev), [App Store](https://apps.apple.com/us/app/4sight-ai-for-real-life/id6505015586)                      |
 
 ---
 
-### 🛡️ Security Research & Disclosures
+### 💻 <strong>Languages</strong>
 
-I contribute to security through responsible disclosure.
+- **Expert:** Rust, C++, Python, Git, arm64e Assembly
+- **Proficient:** VHDL, C, x86_64 Assembly, Java, Kotlin, TypeScript, Flutter
+- **Learning:** Lean (for mathematical proofs and formal verification)
 
-| CVE ID      | Product      | Summary                                | Status                                                 |
-| ----------- | ------------ | -------------------------------------- | ------------------------------------------------------ |
-| **Pending** | Apple macOS  | Memory safety vulnerability (embargoed) | Reproduced, acknowledged by Apple, patch in progress.  |
+### 🔧 <strong>Tools</strong>
 
-> *Further details under embargo untill patch release per responsible disclosure policy.*
+- **Systems & Low-Level:** QEMU, LLDB, LLVM, Vivado, GHDL
+- **Security:** Ghidra, Frida, Jackalope (fuzzer), TinyInst
+
+---
+
+### 🔭 Currently Working On
+
+- Expanding `rustc_codegen_jvm` to support more of the Rust language.
+- FPGA accelerator for [cryogenic electron microscopy](https://en.wikipedia.org/wiki/Cryogenic_electron_microscopy).
+- Developing a Rust-based platform for XNU kext fuzzing in userspace.
+- Learning Lean for formal verification.
 
 ---
 
-### 💻 <strong>Languages & Tools</strong>
+### 📫 Get in Touch
 
-Here are some of the technologies I use regularly:
-
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![WebAssembly](https://img.shields.io/badge/webassembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
-![VHDL](https://img.shields.io/badge/VHDL-17355B?style=for-the-badge&logo=gnu&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![QEMU](https://img.shields.io/badge/QEMU-FF6600?style=for-the-badge&logo=qemu&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-
----
+- **Email**: `linux479 [at] duck [dot] com`
+- **Discord**: `dna_codon`
+- **Reddit**: `u/IntegralPilot`
