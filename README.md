@@ -64,7 +64,7 @@ Outside of systems work, I build applications that solve real-world problems - e
 
 ### 💻 <strong>Languages</strong>
 
-- **Expert:** Rust, C++, Python, Git, arm64e Assembly
+- **Expert:** Rust, C++, Python, Git, ARM Assembly (arm64, arm64e w/ PAC)
 - **Proficient:** VHDL, C, x86_64 Assembly, Java, Kotlin, TypeScript, Flutter
 - **Learning:** Lean (for mathematical proofs and formal verification)
 
