@@ -19,7 +19,7 @@ I contribute to security through responsible disclosure.
 
 ### 👨‍💻 About Me
 
-- 🇦🇺 High school student based in Australia  
+- 🇦🇺 High school sophmore (Year 10) based in Australia  
 - 🧠 Deep interest in systems programming, hardware design, and applied security  
 - 🧬 Exploring computational neuroscience and bioinformatics  
 - ⚡ I love building things that are fast, safe, and deeply understood
