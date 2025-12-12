@@ -2,19 +2,19 @@
 
 I'm passionate about **low-level systems**, **security research**, and **compiler design**.
 
-🎯 **TL;DR** - I build operating systems, compilers, and CPUs from scratch. I've discovered **high-severity security vulnerabilities** in Apple macOS ([**CVE-2025-43361**](https://www.cve.org/CVERecord?id=CVE-2025-43361)), wrote a **compiler** to bring Rust to the JVM, contributed code that powers **Wikipedia's backend**, and shipped production apps with **Flutter and TypeScript**.
+🎯 **TL;DR** - I build operating systems, compilers, and CPUs from scratch. I've discovered **multiple security vulnerabilities** in Apple platforms, including **kernel memory disclosures** ([**CVE-2025-43361**](https://www.cve.org/CVERecord?id=CVE-2025-43361)) and **remote 0-click vectors** ([**CVE-2025-43539**](https://www.cve.org/CVERecord?id=CVE-2025-43539)). I also wrote a **compiler** to bring Rust to the JVM, contributed code that powers **Wikipedia's backend**, and shipped production apps with **Flutter and TypeScript**.
 
 ---
-
 ### 🛡️ Security Research & Disclosures
 
 I contribute to security through responsible disclosure.
 
-| CVE ID      | Product      | Summary                                | Status                                                 |
-| ----------- | ------------ | -------------------------------------- | ------------------------------------------------------ |
-| **CVE-2025-43361** | Apple macOS, iOS, tvOS, visionOS, watchOS  | A malicious sandboxed app may be able to read kernel memory through an issue in the Audio subsystem. [Vendor advisory](https://support.apple.com/en-us/125108), [CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43361)| Assigned **CVSS 7.8 (HIGH)**, patched and published.  |
+| CVE ID | Component | Vulnerability Detail | References | CVSS 
+| :--- | :--- | :--- | :--- | :--- |
+| **CVE-2025-43361** | **Apple Audio Subsystem** | **Kernel Memory Disclosure.** A malicious sandboxed app could read kernel memory via an out-of-bounds read.<br>_CVSS 7.8 (High)._ | [Vendor](https://support.apple.com/en-us/125108)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43361) | 7.8 (HIGH)
+| **CVE-2025-43539** | **AppleJPEG**<br>JPEG XL (JXL) | **Memory Corruption** in `AppleJPEG`, specifically affecting **JPEG XL (JXL)** parsing. <br>_0-click remote vector (e.g. via iMessage)._ | [Vendor](https://support.apple.com/en-us/125884)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43539) | Pending
+| **CVE-2025-43482** | **Apple CoreAudio**<br>`coreaudiod` | **Denial of Service.** Improper input validation allowing a malicious app to crash the system audio daemon.<br>_Co-credited with Jex Amro._ | [Vendor](https://support.apple.com/en-us/125886)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43482) | Pending
 
-> *Several other vulnerabilities are currently in the process of coordinated disclosure. They will be listed here once publicly announced.*
 ---
 
 ### 👨‍💻 About Me
@@ -89,3 +89,4 @@ Outside of systems work, I build applications that solve real-world problems - e
 - **Email**: `linux479 [at] duck [dot] com`
 - **Discord**: `dna_codon`
 - **Reddit**: `u/IntegralPilot`
+- **Twitter/X**: `@IntegralPilot`
