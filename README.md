@@ -11,9 +11,9 @@ I contribute to security through responsible disclosure.
 
 | CVE ID | Component | Vulnerability Detail | References | CVSS 
 | :--- | :--- | :--- | :--- | :--- |
-| **CVE-2025-43361** | **Apple Audio Subsystem** | **Kernel Memory Disclosure.** A malicious sandboxed app could read kernel memory via an out-of-bounds read.<br>_CVSS 7.8 (High)._ | [Vendor](https://support.apple.com/en-us/125108)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43361) | 7.8 (HIGH)
-| **CVE-2025-43539** | **AppleJPEG**<br>JPEG XL (JXL) | **Memory Corruption** in `AppleJPEG`, specifically affecting **JPEG XL (JXL)** parsing. <br>_0-click remote vector (e.g. via iMessage)._ | [Vendor](https://support.apple.com/en-us/125884)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43539) | Pending
-| **CVE-2025-43482** | **Apple CoreAudio**<br>`coreaudiod` | **Denial of Service.** Improper input validation allowing a malicious app to crash the system audio daemon.<br>_Co-credited with Jex Amro._ | [Vendor](https://support.apple.com/en-us/125886)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43482) | Pending
+| **CVE-2025-43361** | **Apple Audio Subsystem** | **Kernel Memory Disclosure.** A malicious sandboxed app could read kernel memory via an out-of-bounds read.<br>_CVSS 7.8 (High)._ | [Vendor (iOS)](https://support.apple.com/en-us/125108)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43361) | 7.8 (HIGH)
+| **CVE-2025-43539** | **AppleJPEG**<br>JPEG XL (JXL) | **Memory Corruption** in `AppleJPEG`, specifically affecting **JPEG XL (JXL)** parsing. <br>_0-click remote vector (e.g. via iMessage)._ | [Vendor (iOS)](https://support.apple.com/en-us/125884)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43539) | Pending
+| **CVE-2025-43482** | **Apple CoreAudio**<br>`coreaudiod` | **Denial of Service.** Improper input validation allowing a malicious app to crash the system audio daemon.<br>_Co-credited with Jex Amro._ | [Vendor (macOS)](https://support.apple.com/en-us/125886)<br>[CVE.org](https://www.cve.org/CVERecord?id=CVE-2025-43482) | Pending
 
 ---
 
