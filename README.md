@@ -47,7 +47,7 @@ I actively contribute to open source, including the Wikimedia Foundation’s Med
 | ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | **MediaWiki – Nuke** *(merged & deployed)* | ✨ Filtering by min/max page size in `Special:Nuke`, with UI, backend logic, and validation. <br>🔍 Introduced non-fatal validation messages. | [Change 1116491](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Nuke/+/1116491) <br>[T378488](https://phabricator.wikimedia.org/T378488) |
 | **MediaWiki – Nuke** *(merged & deployed)* | 🔓 Allowed non-admins to list pages in `Special:Nuke`, improving usability for patrollers. <br>🛑 Permission-aware UI and i18n. | [Change 1116493](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Nuke/+/1116493) <br>[T376378](https://phabricator.wikimedia.org/T376378) |
-| **MediaWiki – AbuseFilter** *(under review)* | 🕵️ Added support for *suppressing* filters containing PII. <br>👥 UI/API access restricted to oversighters. | [Change 1115319](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/AbuseFilter/+/1115319) <br>[T290324](https://phabricator.wikimedia.org/T290324) |
+| **MediaWiki – AbuseFilter** *(merged - deployment on Jan 6)* | 🕵️ Added support for *suppressing* filters containing PII. <br>👥 UI/API access restricted to oversighters. | [Change 1115319](https://gerrit.wikimedia.org/r/c/mediawiki/extensions/AbuseFilter/+/1115319) <br>[T290324](https://phabricator.wikimedia.org/T290324) |
 
 ---
 📱 <strong>Apps</strong>
