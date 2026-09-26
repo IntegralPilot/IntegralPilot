@@ -10,7 +10,7 @@ I'm Michael, an Australian high school student interested in all kinds of tech! 
       - Landed in kernel 7.1 after 7 revisions.
     -  [Keyboard drivers for M2 and M3 Macs](https://lore.kernel.org/asahi/20260925-apple-mtp-keyboard-final-v4-0-304c267518f4@gmail.com/), involving a custom transport protocol (DockChannel) and managing a whole seperate coprocessor which runs Apple's custom embedded operating system (RTKit).
        -  Currently under review, targeting 7.4-7.5 for landing.
-    - [BCM4388 drivers for M3 Macs](https://lore.kernel.org/asahi/20260925-brcm4388-submit-v1-0-b5cbc2cde2fb@gmail.com/), enabling Wi-Fi support via signed firmware loading, control-ring mailbox transport, modernised `brcmfmac` protocol layouts, and more.
+    - [BCM4388 drivers for Macs](https://lore.kernel.org/asahi/20260925-brcm4388-submit-v1-0-b5cbc2cde2fb@gmail.com/), providing Wi-Fi support on M2 Pro/Ultra, M3, and M4, via signed firmware loading, control-ring mailbox transport, modernised `brcmfmac` protocol layouts, and more.
        - Currently under review, targeting 7.4-7.6 for landing. 
 - **[`rustc_codegen_jvm`](https://github.com/IntegralPilot/rustc_codegen_jvm)**
   - Compiler (rustc codegen backend) that I built from scratch to compile Rust to JVM bytecode
