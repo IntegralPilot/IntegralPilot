@@ -5,8 +5,13 @@ I'm Michael, an Australian high school student interested in all kinds of tech! 
   - **[CVE-2025-43361](https://support.apple.com/en-us/125108)** | Out-of-bounds read in privileged Audio process from sandboxed application [**(CVSS 7.8)**](https://www.cve.org/CVERecord?id=CVE-2025-43361)
   - **[CVE-2025-43482](https://support.apple.com/en-us/125886)** | Improper input validation in system Audio daemon [**(CVSS 5.5)**](https://www.cve.org/CVERecord?id=CVE-2025-43482)
 - **Linux kernel**
-  - Co-authored and led upstreaming of [Apple Silicon power supply drivers](https://lore.kernel.org/asahi/20260217-b4-macsmc-power-v7-0-4a4d63664362@gmail.com/), enabling battery telemetry, AC adapter monitoring, and charge control. Landed in kernel 7.1 after 7 revisions.
-  - Same with [keyboard drivers for M2 and M3 Macs](https://lore.kernel.org/asahi/20260918-apple-mtp-keyboard-final-v3-0-e356464e454b@gmail.com/T/#t), which are quite complicated as they involve a custom proprietary transport protocol (DockChannel) and managing a whole seperate coprocessor which runs Apple's custom embedded operating system (RTKit). Currently under review, targeting 7.4-7.5 for landing.
+  - Co-authored and led upstreaming of:
+    - [Apple Silicon power supply drivers](https://lore.kernel.org/asahi/20260217-b4-macsmc-power-v7-0-4a4d63664362@gmail.com/), enabling battery telemetry, AC adapter monitoring, and charge control.
+      - Landed in kernel 7.1 after 7 revisions.
+    -  [Keyboard drivers for M2 and M3 Macs](https://lore.kernel.org/asahi/20260925-apple-mtp-keyboard-final-v4-0-304c267518f4@gmail.com/), involving a custom transport protocol (DockChannel) and managing a whole seperate coprocessor which runs Apple's custom embedded operating system (RTKit).
+       -  Currently under review, targeting 7.4-7.5 for landing.
+    - [BCM4388 drivers for M3 Macs](https://lore.kernel.org/asahi/20260925-brcm4388-submit-v1-0-b5cbc2cde2fb@gmail.com/), enabling Wi-Fi support via signed firmware loading, control-ring mailbox transport, modernised `brcmfmac` protocol layouts, and more.
+       - Currently under review, targeting 7.4-7.6 for landing. 
 - **[`rustc_codegen_jvm`](https://github.com/IntegralPilot/rustc_codegen_jvm)**
   - Compiler (rustc codegen backend) that I built from scratch to compile Rust to JVM bytecode
   - Quite far along, passing 99.81% of upstream `coretests` and `alloctests`
